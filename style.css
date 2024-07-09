@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    font-family: "Inter", sans-serif;
+}
+p{
+     margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.mainRectangle{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 743px;
+    height: 91px;
+    border-radius: 10px;
+    background-color: rgba(53, 121, 245, 1);
+}
+.barAndContent{
+    display: flex;
+    justify-content: flex-start;
+}
+.progress-wrapper {
+    margin-left: 22px;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-circle {
+    --percentage: 5;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: conic-gradient(#ffffff calc(var(--percentage) * 1%), transparent calc(var(--percentage) * 1%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle {
+    width: 93%;
+    height: 93%;
+    background-color: rgba(53, 121, 245, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.inner-circle::before {
+    content: attr(data-progress);
+    position: absolute;
+    font-size: 1.2em;
+    color: white;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 16px;
+}
+.buttonCheck{
+    color: white;
+    width: 76px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    padding: 0 10px 0 10px;
+    background-color: rgba(35, 100, 219, 1);
+    border-radius: 40px;
+}
+.textProgress{
+    margin-top: 4px;
+    color: white;
+
+    font-size: 15px;
+    line-height: 20px;
+}
+.textInfo{
+    margin-top: 4px;
+    color: white;
+    line-height: 18px;
+    font-size: 12px;
+}
+.button{
+    background-color: rgba(244, 248, 255, 1);
+    width: 170px;
+    height: 40px;
+    border-radius: 6px;
+
+}
+.buttonText{
+    width: 120px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: rgba(71, 119, 237, 1);
+    padding: 10px 25px 10px 25px;
+}
+.buttonArea{
+    width: 200px;
+}
